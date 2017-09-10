@@ -17,7 +17,7 @@ ReadDir::ReadDir(std::string filePath)
 }
 ReadDir::~ReadDir()
 {
-   // close(_fdir);
+    closedir(_fdir);
 }
 
 std::vector<std::string> ReadDir::getFileNames()
